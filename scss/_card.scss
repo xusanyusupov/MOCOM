@@ -1,0 +1,47 @@
+#card{
+    margin: 180px 0;
+    .card__wrapper{
+        display: flex;
+        .card__all{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-gap: 40px;
+            width: 100%;
+            overflow: auto;
+            overflow-y: hidden;
+            .card{
+                height: 490px;
+                transition: .5s ease;
+                cursor: pointer;
+                .card__img{
+                    width: 100%;
+                    padding: 50px 5px;
+                    background-color: $card-background;
+                    border-radius: 8px;
+                    transition: .5s ease;
+                    &:hover{
+                        background-color: #adc6cf;
+                    }
+                }
+                .card__text{
+                    padding: 10px 0;
+                }
+               
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+    height: 8px;
+    margin-top: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $card-background;
+    border-radius: 8px;
+    &:hover{
+        background-color: #adc6cf;
+    }
+}
+

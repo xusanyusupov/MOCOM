@@ -1,0 +1,61 @@
+main {
+    .shop__wrap {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+
+        .card__shop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+            border-radius: 20px;
+            transition: .5s ease;
+            padding: 10px 0;
+            cursor: pointer;
+            background-color: #EDF2F4;
+
+            .card__img {
+                img {
+                    width: 100%;
+                    height: 220px;
+                    border-radius: 20px;
+                    padding: 15px 10px;
+                    transition: .5s ease;
+                }
+            }
+
+            &:hover {
+                background-color: #adc6cf;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1120px) {
+    main {
+        .shop__wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 1120px) {
+    main {
+        .shop__wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    main {
+        .shop__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}

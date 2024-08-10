@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Lalezar;
+    src: url("../fonts/Lalezar-Regular.woff");
+}
+$color: red;
+$card-background: #EDF2F4;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lalezar';
+}
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.btn{
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: $color;
+    color: $card-background;
+    font-size: 18px;
+    transition: .5s linear;
+    &:hover{
+        background-color: $card-background;
+        color: $color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+// none elements
+.fa-solid.fa-bars{
+    display: none;
+}
